@@ -1,0 +1,80 @@
+{
+    "channels": {
+        "2048": {
+            "replay": true,
+            "alternativeAds": false,
+            "title": "Explorer Channel IT",
+            "description": "EIN KANAL, DER SICH GANZ DER ENTDECKUNG UND ERFORSCHUNG UNSERES LANDES, ABER AUCH DER INTERNATIONALEN REALITÄTEN WIDMET.",
+            "lang": [
+                "it"
+            ],
+            "genre": [
+                "zvkP",
+                "rfya",
+                "vx7B"
+            ],
+            "logo": "https://services.sg101.prd.sctv.ch/content/images/tv/channel/2048_image_5_{resolution}.{fileType}",
+            "quality": 2
+        },
+        "2049": {
+            "replay": true,
+            "alternativeAds": false,
+            "title": "SI Solocalcio",
+            "description": "SI Solocalcio ist ein italienischer Fernsehsender, der sich ausschließlich mit der Welt des Fußballs beschäftigt.",
+            "lang": [
+                "it"
+            ],
+            "genre": [
+                "AjdG",
+                "vx7B"
+            ],
+            "logo": "https://services.sg101.prd.sctv.ch/content/images/tv/channel/2049_image_5_{resolution}.{fileType}",
+            "quality": 2
+        },
+        "1": {
+            "replay": false,
+            "alternativeAds": false,
+            "title": "13eme Rue",
+            "description": "Filme und Serien der Genres Thriller, Horror und Crime.",
+            "lang": [
+                "fr"
+            ],
+            "genre": [
+                "isb2",
+                "Lc2F"
+            ],
+            "logo": "https://services.sg101.prd.sctv.ch/content/images/tv/channel/1_image_5_{resolution}.{fileType}",
+            "quality": 3
+        },
+        "2": {
+            "replay": false,
+            "alternativeAds": false,
+            "title": "13th Street",
+            "description": "Top-Crime-Serien, packende Thriller und aufregende Action-Dramen in HD.",
+            "lang": [
+                "de"
+            ],
+            "genre": [
+                "isb2",
+                "Lc2F"
+            ],
+            "logo": "https://services.sg101.prd.sctv.ch/content/images/tv/channel/2_image_5_{resolution}.{fileType}",
+            "quality": 3
+        },
+        "1027": {
+            "replay": true,
+            "alternativeAds": false,
+            "title": "Loly TV",
+            "description": "Lokalsender für die Region Lyss und Umgebung.",
+            "lang": [
+                "de"
+            ],
+            "genre": [
+                "gtMd",
+                "vx7B"
+            ],
+            "logo": "https://services.sg101.prd.sctv.ch/content/images/tv/channel/1027_image_5_{resolution}.{fileType}",
+            "quality": 3
+        }
+    }
+}
