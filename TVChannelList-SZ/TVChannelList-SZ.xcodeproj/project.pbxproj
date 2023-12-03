@@ -12,8 +12,16 @@
 		4F6FD2052B1C9E6000BDA019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FD2042B1C9E6000BDA019 /* Assets.xcassets */; };
 		4F6FD2092B1C9E6000BDA019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FD2082B1C9E6000BDA019 /* Preview Assets.xcassets */; };
 		4F6FD2132B1C9E6000BDA019 /* TVChannelList_SZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2122B1C9E6000BDA019 /* TVChannelList_SZTests.swift */; };
-		4F6FD21D2B1C9E6000BDA019 /* TVChannelList_SZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD21C2B1C9E6000BDA019 /* TVChannelList_SZUITests.swift */; };
 		4F6FD21F2B1C9E6000BDA019 /* TVChannelList_SZUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD21E2B1C9E6000BDA019 /* TVChannelList_SZUITestsLaunchTests.swift */; };
+		4F6FD2352B1C9F5800BDA019 /* ButtonWrapperModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2342B1C9F5800BDA019 /* ButtonWrapperModifier.swift */; };
+		4F6FD2372B1C9F7500BDA019 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2362B1C9F7500BDA019 /* View.swift */; };
+		4F6FD23A2B1C9FC800BDA019 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2392B1C9FC800BDA019 /* HomeView.swift */; };
+		4F6FD2412B1CA61B00BDA019 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2402B1CA61B00BDA019 /* Channels.swift */; };
+		4F6FD2432B1CA62C00BDA019 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2422B1CA62C00BDA019 /* Channel.swift */; };
+		4F6FD2462B1CA74800BDA019 /* ChannelLanguange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */; };
+		4F6FD2482B1CA7D600BDA019 /* complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FD2472B1CA7D600BDA019 /* complete.json */; };
+		4F6FD24A2B1CA86800BDA019 /* ChannelGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */; };
+		4F6FD24E2B1CACC100BDA019 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD24D2B1CACC100BDA019 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +51,16 @@
 		4F6FD20E2B1C9E6000BDA019 /* TVChannelList-SZTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TVChannelList-SZTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6FD2122B1C9E6000BDA019 /* TVChannelList_SZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVChannelList_SZTests.swift; sourceTree = "<group>"; };
 		4F6FD2182B1C9E6000BDA019 /* TVChannelList-SZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TVChannelList-SZUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F6FD21C2B1C9E6000BDA019 /* TVChannelList_SZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVChannelList_SZUITests.swift; sourceTree = "<group>"; };
 		4F6FD21E2B1C9E6000BDA019 /* TVChannelList_SZUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVChannelList_SZUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F6FD2342B1C9F5800BDA019 /* ButtonWrapperModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWrapperModifier.swift; sourceTree = "<group>"; };
+		4F6FD2362B1C9F7500BDA019 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4F6FD2392B1C9FC800BDA019 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4F6FD2402B1CA61B00BDA019 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		4F6FD2422B1CA62C00BDA019 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelLanguange.swift; sourceTree = "<group>"; };
+		4F6FD2472B1CA7D600BDA019 /* complete.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = complete.json; sourceTree = "<group>"; };
+		4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGenre.swift; sourceTree = "<group>"; };
+		4F6FD24D2B1CACC100BDA019 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +111,10 @@
 		4F6FD1FF2B1C9E5F00BDA019 /* TVChannelList-SZ */ = {
 			isa = PBXGroup;
 			children = (
-				4F6FD2002B1C9E5F00BDA019 /* TVChannelList_SZApp.swift */,
-				4F6FD2022B1C9E5F00BDA019 /* ContentView.swift */,
+				4F6FD22B2B1C9EDF00BDA019 /* App */,
+				4F6FD22C2B1C9EE300BDA019 /* Common */,
+				4F6FD22D2B1C9EE900BDA019 /* Utils */,
+				4F6FD22F2B1C9EF900BDA019 /* Resources */,
 				4F6FD2042B1C9E6000BDA019 /* Assets.xcassets */,
 				4F6FD2062B1C9E6000BDA019 /* TVChannelList_SZ.entitlements */,
 				4F6FD2072B1C9E6000BDA019 /* Preview Content */,
@@ -123,10 +141,136 @@
 		4F6FD21B2B1C9E6000BDA019 /* TVChannelList-SZUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4F6FD21C2B1C9E6000BDA019 /* TVChannelList_SZUITests.swift */,
 				4F6FD21E2B1C9E6000BDA019 /* TVChannelList_SZUITestsLaunchTests.swift */,
 			);
 			path = "TVChannelList-SZUITests";
+			sourceTree = "<group>";
+		};
+		4F6FD22B2B1C9EDF00BDA019 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2312B1C9F0C00BDA019 /* Main */,
+				4F6FD2382B1C9FBE00BDA019 /* Home */,
+				4F6FD23B2B1C9FF100BDA019 /* ChannelList */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4F6FD22C2B1C9EE300BDA019 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2442B1CA73D00BDA019 /* Enumerates */,
+				4F6FD23D2B1CA5BC00BDA019 /* Local */,
+				4F6FD2302B1C9F0500BDA019 /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4F6FD22D2B1C9EE900BDA019 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2332B1C9F4D00BDA019 /* Modifiers */,
+				4F6FD2322B1C9F4500BDA019 /* UIComponents */,
+				4F6FD22E2B1C9EEF00BDA019 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4F6FD22E2B1C9EEF00BDA019 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2362B1C9F7500BDA019 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F6FD22F2B1C9EF900BDA019 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2472B1CA7D600BDA019 /* complete.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F6FD2302B1C9F0500BDA019 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD23C2B1CA5B400BDA019 /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4F6FD2312B1C9F0C00BDA019 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2002B1C9E5F00BDA019 /* TVChannelList_SZApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4F6FD2322B1C9F4500BDA019 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		4F6FD2332B1C9F4D00BDA019 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2342B1C9F5800BDA019 /* ButtonWrapperModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		4F6FD2382B1C9FBE00BDA019 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2392B1C9FC800BDA019 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4F6FD23B2B1C9FF100BDA019 /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2022B1C9E5F00BDA019 /* ContentView.swift */,
+			);
+			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		4F6FD23C2B1CA5B400BDA019 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2402B1CA61B00BDA019 /* Channels.swift */,
+				4F6FD2422B1CA62C00BDA019 /* Channel.swift */,
+				4F6FD24D2B1CACC100BDA019 /* Package.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F6FD23D2B1CA5BC00BDA019 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD23E2B1CA5C000BDA019 /* Models */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		4F6FD23E2B1CA5C000BDA019 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F6FD2442B1CA73D00BDA019 /* Enumerates */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */,
+				4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */,
+			);
+			path = Enumerates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6FD2482B1CA7D600BDA019 /* complete.json in Resources */,
 				4F6FD2092B1C9E6000BDA019 /* Preview Assets.xcassets in Resources */,
 				4F6FD2052B1C9E6000BDA019 /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +404,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6FD2432B1CA62C00BDA019 /* Channel.swift in Sources */,
+				4F6FD24A2B1CA86800BDA019 /* ChannelGenre.swift in Sources */,
+				4F6FD2372B1C9F7500BDA019 /* View.swift in Sources */,
+				4F6FD2352B1C9F5800BDA019 /* ButtonWrapperModifier.swift in Sources */,
 				4F6FD2032B1C9E5F00BDA019 /* ContentView.swift in Sources */,
+				4F6FD2462B1CA74800BDA019 /* ChannelLanguange.swift in Sources */,
+				4F6FD24E2B1CACC100BDA019 /* Package.swift in Sources */,
+				4F6FD2412B1CA61B00BDA019 /* Channels.swift in Sources */,
+				4F6FD23A2B1C9FC800BDA019 /* HomeView.swift in Sources */,
 				4F6FD2012B1C9E5F00BDA019 /* TVChannelList_SZApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6FD21D2B1C9E6000BDA019 /* TVChannelList_SZUITests.swift in Sources */,
 				4F6FD21F2B1C9E6000BDA019 /* TVChannelList_SZUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
