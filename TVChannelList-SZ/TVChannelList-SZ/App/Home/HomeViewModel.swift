@@ -13,7 +13,6 @@ class HomeViewModel {
     var channels: Channels?
 
     func getChannels() {
-        print("Get All Channels")
         Task {
             let result = await channelService.getAll()
             switch result {

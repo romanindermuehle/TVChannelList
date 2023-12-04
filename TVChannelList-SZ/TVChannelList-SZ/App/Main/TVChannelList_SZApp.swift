@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TVChannelList_SZApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .modelContainer(for: [LocalChannelList.self])
         }
     }
 }
