@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
+
+    @State var viewModel = HomeViewModel()
+
     var body: some View {
         NavigationStack {
             ContentView()
+        }
+        .task {
+            viewModel.getChannels()
         }
     }
 }
