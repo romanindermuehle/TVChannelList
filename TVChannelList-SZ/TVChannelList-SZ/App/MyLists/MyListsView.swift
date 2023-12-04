@@ -33,7 +33,7 @@ struct MyListsView: View {
             if lists.isEmpty {
                 ContentUnavailableView(
                     "No Lists found",
-                    systemImage: "music.note.list",
+                    systemImage: "radio",
                     description: Text("Create new List with the +")
                 )
             }
