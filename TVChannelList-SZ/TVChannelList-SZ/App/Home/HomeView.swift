@@ -13,14 +13,16 @@ struct HomeView: View {
 
     var body: some View {
         NavigationStack {
-            MyListsView()
+            if viewModel.localChannels != nil {
+                MyListsView(viewModel: .init())
+            } else {
+                ProgressView() {
+                    Text("Loading...")
+                }
+            }
         }
         .task {
-            viewModel.getChannels()
+            viewModel.fetchChannels()
         }
     }
-}
-
-#Preview {
-    HomeView()
 }

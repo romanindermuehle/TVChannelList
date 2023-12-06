@@ -8,7 +8,7 @@
 import Foundation
 
 struct Channels: Codable {
-    let channels: [String: Channel]
+    let channels: [String: Channel]?
     let packages: [Package]?
     let radioChannels: [String: Channel]?
     let radioLineup: RadioLineup?

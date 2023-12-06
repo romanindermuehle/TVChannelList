@@ -5,18 +5,19 @@
 //  Created by Simon Zwicker on 03.12.23.
 //
 
+import Foundation
 import SwiftUI
-import SwiftData
 
 struct MyListsView: View {
 
-    @Environment(\.modelContext) var context
-    @Query var lists: [LocalChannelList]
+    @State var viewModel: MyListsViewModel
     @State var showAddSheet: Bool = false
 
     var body: some View {
-        List(lists, id: \.id) { list in
-            Text(list.name)
+        List(viewModel.myLists, id: \.self) { list in
+            NavigationLink(value: list) {
+                Text(list.name)
+            }
         }
         .navigationTitle("ChanneList")
         .toolbar {
@@ -30,7 +31,7 @@ struct MyListsView: View {
             }
         }
         .overlay {
-            if lists.isEmpty {
+            if viewModel.myLists.isEmpty {
                 ContentUnavailableView(
                     "No Lists found",
                     systemImage: "radio",
@@ -42,9 +43,8 @@ struct MyListsView: View {
             AddListView()
                 .presentationDetents([.height(200.0)])
         })
+        .navigationDestination(for: RealmChannelList.self) { list in
+//            ListView(viewModel: .init(loaded: loaded, list: list))
+        }
     }
-}
-
-#Preview {
-    MyListsView()
 }

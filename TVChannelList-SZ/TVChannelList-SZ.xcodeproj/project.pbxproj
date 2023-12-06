@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F56C7E02B1F74A7007ADDA6 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C7DF2B1F74A7007ADDA6 /* RealmManager.swift */; };
+		4F56C7E32B1F74E7007ADDA6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4F56C7E22B1F74E7007ADDA6 /* Realm */; };
+		4F56C7E52B1F74E7007ADDA6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F56C7E42B1F74E7007ADDA6 /* RealmSwift */; };
+		4F56C7E92B20C6A7007ADDA6 /* MyListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C7E82B20C6A7007ADDA6 /* MyListsViewModel.swift */; };
 		4F5EA69A2B1E15310042186B /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6992B1E15300042186B /* EndpointProtocol.swift */; };
 		4F5EA69E2B1E165A0042186B /* EndpointBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA69D2B1E165A0042186B /* EndpointBaseUrl.swift */; };
 		4F5EA6A42B1E18370042186B /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6A32B1E18370042186B /* RequestMethod.swift */; };
@@ -17,8 +21,13 @@
 		4F5EA6AF2B1E1B850042186B /* ChannelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6AE2B1E1B850042186B /* ChannelService.swift */; };
 		4F5EA6B12B1E1BDB0042186B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B02B1E1BDB0042186B /* HomeViewModel.swift */; };
 		4F5EA6B32B1E20800042186B /* RadioLineup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B22B1E20800042186B /* RadioLineup.swift */; };
-		4F5EA6B52B1E24010042186B /* LocalChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B42B1E24010042186B /* LocalChannelList.swift */; };
+		4F5EA6B52B1E24010042186B /* RealmChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B42B1E24010042186B /* RealmChannelList.swift */; };
 		4F5EA6B72B1E270C0042186B /* AddListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B62B1E270C0042186B /* AddListView.swift */; };
+		4F5EA6BA2B1E62040042186B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6B92B1E62040042186B /* ListView.swift */; };
+		4F5EA6BE2B1E63620042186B /* RealmChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6BD2B1E63620042186B /* RealmChannel.swift */; };
+		4F5EA6C12B1E65790042186B /* ChannelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6C02B1E65790042186B /* ChannelAdapter.swift */; };
+		4F5EA6C32B1E676F0042186B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6C22B1E676F0042186B /* ListViewModel.swift */; };
+		4F5EA6C52B1E683E0042186B /* RealmChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6C42B1E683E0042186B /* RealmChannels.swift */; };
 		4F6FD2012B1C9E5F00BDA019 /* TVChannelList_SZApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2002B1C9E5F00BDA019 /* TVChannelList_SZApp.swift */; };
 		4F6FD2032B1C9E5F00BDA019 /* MyListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2022B1C9E5F00BDA019 /* MyListsView.swift */; };
 		4F6FD2052B1C9E6000BDA019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FD2042B1C9E6000BDA019 /* Assets.xcassets */; };
@@ -31,7 +40,6 @@
 		4F6FD2412B1CA61B00BDA019 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2402B1CA61B00BDA019 /* Channels.swift */; };
 		4F6FD2432B1CA62C00BDA019 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2422B1CA62C00BDA019 /* Channel.swift */; };
 		4F6FD2462B1CA74800BDA019 /* ChannelLanguange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */; };
-		4F6FD2482B1CA7D600BDA019 /* complete.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F6FD2472B1CA7D600BDA019 /* complete.json */; };
 		4F6FD24A2B1CA86800BDA019 /* ChannelGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */; };
 		4F6FD24E2B1CACC100BDA019 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD24D2B1CACC100BDA019 /* Package.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F56C7DF2B1F74A7007ADDA6 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		4F56C7E82B20C6A7007ADDA6 /* MyListsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsViewModel.swift; sourceTree = "<group>"; };
 		4F5EA6992B1E15300042186B /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
 		4F5EA69D2B1E165A0042186B /* EndpointBaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBaseUrl.swift; sourceTree = "<group>"; };
 		4F5EA6A32B1E18370042186B /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
@@ -64,8 +74,13 @@
 		4F5EA6AE2B1E1B850042186B /* ChannelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelService.swift; sourceTree = "<group>"; };
 		4F5EA6B02B1E1BDB0042186B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4F5EA6B22B1E20800042186B /* RadioLineup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioLineup.swift; sourceTree = "<group>"; };
-		4F5EA6B42B1E24010042186B /* LocalChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalChannelList.swift; sourceTree = "<group>"; };
+		4F5EA6B42B1E24010042186B /* RealmChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmChannelList.swift; sourceTree = "<group>"; };
 		4F5EA6B62B1E270C0042186B /* AddListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListView.swift; sourceTree = "<group>"; };
+		4F5EA6B92B1E62040042186B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4F5EA6BD2B1E63620042186B /* RealmChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmChannel.swift; sourceTree = "<group>"; };
+		4F5EA6C02B1E65790042186B /* ChannelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAdapter.swift; sourceTree = "<group>"; };
+		4F5EA6C22B1E676F0042186B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		4F5EA6C42B1E683E0042186B /* RealmChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmChannels.swift; sourceTree = "<group>"; };
 		4F6FD1FD2B1C9E5F00BDA019 /* TVChannelList-SZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVChannelList-SZ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6FD2002B1C9E5F00BDA019 /* TVChannelList_SZApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVChannelList_SZApp.swift; sourceTree = "<group>"; };
 		4F6FD2022B1C9E5F00BDA019 /* MyListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsView.swift; sourceTree = "<group>"; };
@@ -82,7 +97,6 @@
 		4F6FD2402B1CA61B00BDA019 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
 		4F6FD2422B1CA62C00BDA019 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelLanguange.swift; sourceTree = "<group>"; };
-		4F6FD2472B1CA7D600BDA019 /* complete.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = complete.json; sourceTree = "<group>"; };
 		4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGenre.swift; sourceTree = "<group>"; };
 		4F6FD24D2B1CACC100BDA019 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F56C7E52B1F74E7007ADDA6 /* RealmSwift in Frameworks */,
+				4F56C7E32B1F74E7007ADDA6 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +148,38 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4F5EA6B82B1E61F40042186B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EA6B92B1E62040042186B /* ListView.swift */,
+				4F5EA6C22B1E676F0042186B /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		4F5EA6BB2B1E62D70042186B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F6FD2042B1C9E6000BDA019 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4F5EA6BC2B1E62E70042186B /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		4F5EA6BF2B1E656B0042186B /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				4F5EA6C02B1E65790042186B /* ChannelAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		4F6FD1F42B1C9E5F00BDA019 = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +207,6 @@
 				4F6FD22C2B1C9EE300BDA019 /* Common */,
 				4F6FD22D2B1C9EE900BDA019 /* Utils */,
 				4F6FD22F2B1C9EF900BDA019 /* Resources */,
-				4F6FD2042B1C9E6000BDA019 /* Assets.xcassets */,
 				4F6FD2062B1C9E6000BDA019 /* TVChannelList_SZ.entitlements */,
 				4F6FD2072B1C9E6000BDA019 /* Preview Content */,
 			);
@@ -196,6 +243,7 @@
 				4F6FD2312B1C9F0C00BDA019 /* Main */,
 				4F6FD2382B1C9FBE00BDA019 /* Home */,
 				4F6FD23B2B1C9FF100BDA019 /* MyLists */,
+				4F5EA6B82B1E61F40042186B /* List */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -203,6 +251,7 @@
 		4F6FD22C2B1C9EE300BDA019 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4F5EA6BF2B1E656B0042186B /* Adapter */,
 				4F6FD2442B1CA73D00BDA019 /* Enumerates */,
 				4F6FD23D2B1CA5BC00BDA019 /* Local */,
 				4F6FD2302B1C9F0500BDA019 /* Network */,
@@ -231,7 +280,8 @@
 		4F6FD22F2B1C9EF900BDA019 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4F6FD2472B1CA7D600BDA019 /* complete.json */,
+				4F5EA6BC2B1E62E70042186B /* Translations */,
+				4F5EA6BB2B1E62D70042186B /* Assets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -285,6 +335,7 @@
 			children = (
 				4F6FD2022B1C9E5F00BDA019 /* MyListsView.swift */,
 				4F5EA6B62B1E270C0042186B /* AddListView.swift */,
+				4F56C7E82B20C6A7007ADDA6 /* MyListsViewModel.swift */,
 			);
 			path = MyLists;
 			sourceTree = "<group>";
@@ -304,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				4F6FD23E2B1CA5C000BDA019 /* Models */,
+				4F56C7DF2B1F74A7007ADDA6 /* RealmManager.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -311,7 +363,9 @@
 		4F6FD23E2B1CA5C000BDA019 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4F5EA6B42B1E24010042186B /* LocalChannelList.swift */,
+				4F5EA6B42B1E24010042186B /* RealmChannelList.swift */,
+				4F5EA6BD2B1E63620042186B /* RealmChannel.swift */,
+				4F5EA6C42B1E683E0042186B /* RealmChannels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -341,6 +395,10 @@
 			dependencies = (
 			);
 			name = "TVChannelList-SZ";
+			packageProductDependencies = (
+				4F56C7E22B1F74E7007ADDA6 /* Realm */,
+				4F56C7E42B1F74E7007ADDA6 /* RealmSwift */,
+			);
 			productName = "TVChannelList-SZ";
 			productReference = 4F6FD1FD2B1C9E5F00BDA019 /* TVChannelList-SZ.app */;
 			productType = "com.apple.product-type.application";
@@ -413,6 +471,9 @@
 				Base,
 			);
 			mainGroup = 4F6FD1F42B1C9E5F00BDA019;
+			packageReferences = (
+				4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 4F6FD1FE2B1C9E5F00BDA019 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,7 +490,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F6FD2482B1CA7D600BDA019 /* complete.json in Resources */,
 				4F6FD2092B1C9E6000BDA019 /* Preview Assets.xcassets in Resources */,
 				4F6FD2052B1C9E6000BDA019 /* Assets.xcassets in Resources */,
 			);
@@ -460,21 +520,28 @@
 				4F5EA6A62B1E187F0042186B /* RequestError.swift in Sources */,
 				4F5EA6A42B1E18370042186B /* RequestMethod.swift in Sources */,
 				4F5EA69A2B1E15310042186B /* EndpointProtocol.swift in Sources */,
-				4F5EA6B52B1E24010042186B /* LocalChannelList.swift in Sources */,
+				4F5EA6B52B1E24010042186B /* RealmChannelList.swift in Sources */,
+				4F56C7E02B1F74A7007ADDA6 /* RealmManager.swift in Sources */,
 				4F5EA6AF2B1E1B850042186B /* ChannelService.swift in Sources */,
+				4F5EA6C52B1E683E0042186B /* RealmChannels.swift in Sources */,
 				4F6FD2432B1CA62C00BDA019 /* Channel.swift in Sources */,
+				4F5EA6BA2B1E62040042186B /* ListView.swift in Sources */,
+				4F5EA6C12B1E65790042186B /* ChannelAdapter.swift in Sources */,
 				4F6FD24A2B1CA86800BDA019 /* ChannelGenre.swift in Sources */,
 				4F6FD2372B1C9F7500BDA019 /* View.swift in Sources */,
 				4F6FD2352B1C9F5800BDA019 /* ButtonWrapperModifier.swift in Sources */,
 				4F5EA6B72B1E270C0042186B /* AddListView.swift in Sources */,
 				4F6FD2032B1C9E5F00BDA019 /* MyListsView.swift in Sources */,
+				4F56C7E92B20C6A7007ADDA6 /* MyListsViewModel.swift in Sources */,
 				4F5EA69E2B1E165A0042186B /* EndpointBaseUrl.swift in Sources */,
 				4F6FD2462B1CA74800BDA019 /* ChannelLanguange.swift in Sources */,
 				4F5EA6B32B1E20800042186B /* RadioLineup.swift in Sources */,
 				4F6FD24E2B1CACC100BDA019 /* Package.swift in Sources */,
+				4F5EA6BE2B1E63620042186B /* RealmChannel.swift in Sources */,
 				4F5EA6A82B1E19390042186B /* NetworkClient.swift in Sources */,
 				4F6FD2412B1CA61B00BDA019 /* Channels.swift in Sources */,
 				4F6FD23A2B1C9FC800BDA019 /* HomeView.swift in Sources */,
+				4F5EA6C32B1E676F0042186B /* ListViewModel.swift in Sources */,
 				4F5EA6AD2B1E1B630042186B /* ChannelServiceProtocol.swift in Sources */,
 				4F5EA6AA2B1E1AED0042186B /* ChannelsEndpoint.swift in Sources */,
 				4F6FD2012B1C9E5F00BDA019 /* TVChannelList_SZApp.swift in Sources */,
@@ -835,6 +902,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F56C7E22B1F74E7007ADDA6 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		4F56C7E42B1F74E7007ADDA6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F6FD1F52B1C9E5F00BDA019 /* Project object */;
 }

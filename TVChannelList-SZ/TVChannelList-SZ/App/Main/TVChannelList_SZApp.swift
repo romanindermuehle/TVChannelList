@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import SwiftData
+import RealmSwift
 
 @main
-struct TVChannelList_SZApp: App {
+struct TVChannelList_SZApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .modelContainer(for: [LocalChannelList.self])
+                .environment(\.realmConfiguration, Realm.Configuration())
         }
     }
 }

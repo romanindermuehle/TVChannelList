@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AddListView: View {
 
-    @Environment(\.modelContext) var context
     @Environment(\.dismiss) var dismiss
     @State var listName: String = ""
 
@@ -28,8 +27,6 @@ struct AddListView: View {
                 .disabled(listName.isEmpty)
                 .foregroundStyle(.cyan)
                 .button {
-                    let list = LocalChannelList(name: listName)
-                    context.insert(list)
                     dismiss()
                 }
                 .padding(.top, 20.0)
