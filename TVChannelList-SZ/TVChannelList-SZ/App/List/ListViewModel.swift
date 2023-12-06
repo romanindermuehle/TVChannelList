@@ -10,10 +10,10 @@ import Foundation
 @Observable
 class ListViewModel {
 
-    let list: RealmChannelList
+    private let list: RealmChannelList
+    private var localChannels: RealmChannels?
+    private(set) var showedChannels: [RealmChannel] = []
     var pickerTag: Int = 0
-    var localChannels: RealmChannels?
-    var showedChannels: [RealmChannel] = []
 
     init(list: RealmChannelList) {
         self.list = list
