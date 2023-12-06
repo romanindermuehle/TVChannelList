@@ -13,12 +13,13 @@ class HomeViewModel {
     private(set) var localChannels: RealmChannels?
 
     func fetchChannels() {
-        if !fetchLocalChannels() {
+        fetchLocalChannels { [weak self] state in
+            guard let self, !state else { return }
             Task {
-                let result = await channelService.getAll()
+                let result = await self.channelService.getAll()
                 switch result {
                 case .success(let channels):
-                    saveLocalChannels(channels)
+                    self.saveLocalChannels(channels)
 
                 case .failure(let error):
                     print("Error: \(error.message)")
@@ -27,24 +28,31 @@ class HomeViewModel {
         }
     }
 
-    private func fetchLocalChannels() -> Bool {
-        guard let local = RealmManager.shared.read(RealmChannels.self).first else { return false }
-        self.localChannels = local
-        return true
+    private func fetchLocalChannels(completion: @escaping (Bool) -> ()) {
+        DispatchQueue.main.async {
+            guard let local = RealmManager.shared.read(RealmChannels.self).first else {
+                completion(false)
+                return
+            }
+            self.localChannels = local
+            completion(true)
+        }
     }
 
     private func saveLocalChannels(_ channels: Channels) {
-        let localChannels = ChannelAdapter.convertObjects(channels.channels)
-        let localRadioChannels = ChannelAdapter.convertObjects(channels.radioChannels)
-        let localAppChannels = ChannelAdapter.convertObjects(channels.appChannels)
+        DispatchQueue.main.async {
+            let localChannels = ChannelAdapter.convertObjects(channels.channels)
+            let localRadioChannels = ChannelAdapter.convertObjects(channels.radioChannels)
+            let localAppChannels = ChannelAdapter.convertObjects(channels.appChannels)
 
-        let realmChannels = RealmChannels()
-        localChannels.forEach { realmChannels.channels.append($0) }
-        localRadioChannels.forEach { realmChannels.radioChannels.append($0) }
-        localAppChannels.forEach { realmChannels.appChannels.append($0) }
+            let realmChannels = RealmChannels()
+            localChannels.forEach { realmChannels.channels.append($0) }
+            localRadioChannels.forEach { realmChannels.radioChannels.append($0) }
+            localAppChannels.forEach { realmChannels.appChannels.append($0) }
 
-        RealmManager.shared.insert(realmChannels)
+            RealmManager.shared.insert(realmChannels)
 
-        self.localChannels = realmChannels
+            self.localChannels = realmChannels
+        }
     }
 }
