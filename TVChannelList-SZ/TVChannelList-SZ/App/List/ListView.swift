@@ -24,44 +24,40 @@ struct ListView: View {
             .pickerStyle(.segmented)
             .padding()
 
-//            List(viewModel.showedChannels, id: \.id) { channel in
-//                VStack(alignment: .leading, spacing: 10.0) {
-//                    HStack(spacing: 15.0) {
-//                        Text("\(channel.title)")
-//                            .font(.system(size: 18.0, weight: .bold))
-//
-//                        Spacer()
-//
-//                        if let url = URL(string: channel.logo) {
-//                            AsyncImage(url: url) { image in
-//                                image
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fit)
-//                            } placeholder: {
-//                                Image(systemName: "photo")
-//                                    .imageScale(.large)
-//                                    .foregroundColor(.gray)
-//                            }
-//                            .frame(width: 45.0)
-//                        } else {
-//                            Image(systemName: "photo")
-//                                .imageScale(.large)
-//                                .foregroundColor(.gray)
-//                        }
-//                    }
-//
-//                    Text(channel.desc)
-//                        .font(.system(size: 10.0))
-//                        .lineLimit(3)
-//                        .foregroundStyle(.gray)
-//                }
-//                .padding([.top, .bottom], 10.0)
-//            }
+            List(viewModel.showedChannels, id: \._id) { channel in
+                VStack(alignment: .leading, spacing: 10.0) {
+                    HStack(spacing: 15.0) {
+                        Text("\(channel.title)")
+                            .font(.system(size: 18.0, weight: .bold))
+
+                        Spacer()
+
+                        if let url = URL(string: channel.logo) {
+                            AsyncImage(url: url) { image in
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                            } placeholder: {
+                                Image(systemName: "photo")
+                                    .imageScale(.large)
+                                    .foregroundColor(.gray)
+                            }
+                            .frame(width: 45.0)
+                        } else {
+                            Image(systemName: "photo")
+                                .imageScale(.large)
+                                .foregroundColor(.gray)
+                        }
+                    }
+
+                    Text(channel.desc)
+                        .font(.system(size: 10.0))
+                        .lineLimit(3)
+                        .foregroundStyle(.gray)
+                }
+                .padding([.top, .bottom], 10.0)
+            }
         }
-//        .navigationTitle(viewModel.list.name)
+        .navigationTitle(viewModel.list.name)
     }
 }
-
-//#Preview {
-//    ListView(list: .init(name: "Test"))
-//}

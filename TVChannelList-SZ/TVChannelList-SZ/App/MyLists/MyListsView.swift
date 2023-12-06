@@ -40,11 +40,11 @@ struct MyListsView: View {
             }
         }
         .sheet(isPresented: $showAddSheet, content: {
-            AddListView()
+            AddListView(viewModel: viewModel)
                 .presentationDetents([.height(200.0)])
         })
         .navigationDestination(for: RealmChannelList.self) { list in
-//            ListView(viewModel: .init(loaded: loaded, list: list))
+            ListView(viewModel: .init(list: list))
         }
     }
 }

@@ -19,4 +19,11 @@ class MyListsViewModel {
     private func fetchMyLists() {
         self.myLists = RealmManager.shared.read(RealmChannelList.self)
     }
+
+    func saveList(name: String) {
+        let list = RealmChannelList()
+        list.name = name
+        RealmManager.shared.insert(list)
+        fetchMyLists()
+    }
 }

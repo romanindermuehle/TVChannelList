@@ -11,6 +11,7 @@ struct AddListView: View {
 
     @Environment(\.dismiss) var dismiss
     @State var listName: String = ""
+    let viewModel: MyListsViewModel
 
     var body: some View {
         VStack(spacing: 15.0) {
@@ -27,14 +28,11 @@ struct AddListView: View {
                 .disabled(listName.isEmpty)
                 .foregroundStyle(.cyan)
                 .button {
+                    viewModel.saveList(name: listName)
                     dismiss()
                 }
                 .padding(.top, 20.0)
         }
         .padding()
     }
-}
-
-#Preview {
-    AddListView()
 }
