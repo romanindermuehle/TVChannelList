@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct AddNewListView: View {
+struct AddListView: View {
     
     @Environment(\.dismiss) var dismiss
-    @StateObject var viewModel: MainViewModel
+    @StateObject var viewModel: HomeViewModel
     @State var textFieldText = ""
     
     var body: some View {
@@ -50,9 +50,9 @@ struct AddNewListView: View {
     }
 }
 
-struct AddNewView_Previews: PreviewProvider {
+struct AddListView_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewListView(viewModel: MainViewModel())
-            .environmentObject(MainViewModel())
+        AddListView(viewModel: HomeViewModel())
+            .environmentObject(HomeViewModel())
     }
 }

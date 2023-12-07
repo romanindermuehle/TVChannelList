@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct MainView: View {
-    @StateObject var viewModel: MainViewModel
+struct HomeView: View {
+    @StateObject var viewModel: HomeViewModel
     
     var body: some View {
         NavigationStack {
@@ -45,13 +45,13 @@ struct MainView: View {
             }
         }
         .sheet(isPresented: $viewModel.showingAddView) {
-            AddNewListView(viewModel: viewModel)
+            AddListView(viewModel: viewModel)
         }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(viewModel: MainViewModel())
+        HomeView(viewModel: HomeViewModel())
     }
 }

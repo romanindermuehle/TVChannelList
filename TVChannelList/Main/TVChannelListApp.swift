@@ -11,7 +11,7 @@ import SwiftUI
 struct TVChannelListApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(viewModel: MainViewModel())
+            HomeView(viewModel: HomeViewModel())
         }
     }
 }

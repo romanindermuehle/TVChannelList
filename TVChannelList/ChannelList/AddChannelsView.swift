@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct AddNewChannelsView: View {
+struct AddChannelsView: View {
     
-    @StateObject var viewModel: AddNewChannelsViewModel
+    @StateObject var viewModel: AddChannelsViewModel
     @ObservedObject var sharedStorage = SharedStorage.shared
     @Environment(\.dismiss) var dismiss
     
@@ -45,6 +45,6 @@ struct AddNewChannelsView: View {
 }
 
 #Preview {
-    AddNewChannelsView(viewModel: AddNewChannelsViewModel())
+    AddChannelsView(viewModel: AddChannelsViewModel())
 }
 

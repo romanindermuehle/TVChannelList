@@ -60,7 +60,7 @@ struct ChannelListView: View {
         }
         .sheet(isPresented: $viewModel.showAdChannelsView) {
             NavigationStack {
-                AddNewChannelsView(viewModel: AddNewChannelsViewModel())
+                AddChannelsView(viewModel: AddChannelsViewModel())
             }
         }
         .searchable(text: $viewModel.searchText)
@@ -71,7 +71,7 @@ struct ChannelListView: View {
 }
 
 
-struct DetailView_Previews: PreviewProvider {
+struct ChannelListView_Previews: PreviewProvider {
     static var previews: some View {
         let item = ChannelList(name: "Test")
         ChannelListView(viewModel: .init(item: item))

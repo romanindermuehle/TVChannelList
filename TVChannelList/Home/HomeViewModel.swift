@@ -8,7 +8,7 @@
 import Foundation
 
 
-class MainViewModel: ObservableObject {
+class HomeViewModel: ObservableObject {
     @Published var showingAddView = false
     
     @Published var items: [ChannelList] = [] {
