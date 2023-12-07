@@ -16,8 +16,15 @@ struct HomeView: View {
             if viewModel.localChannels != nil {
                 MyListsView(viewModel: .init())
             } else {
-                ProgressView() {
-                    Text("Loading...")
+
+                VStack(spacing: 25.0) {
+                    Image(systemName: "sparkles.tv")
+                        .font(.system(size: 60.0))
+                        .foregroundStyle(.teal)
+
+                    Text("Loading Channels...")
+                        .font(.system(size: 20.0, weight: .bold))
+                        .foregroundStyle(.gray)
                 }
             }
         }

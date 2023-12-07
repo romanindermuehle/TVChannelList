@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F56C7E02B1F74A7007ADDA6 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C7DF2B1F74A7007ADDA6 /* RealmManager.swift */; };
-		4F56C7E32B1F74E7007ADDA6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4F56C7E22B1F74E7007ADDA6 /* Realm */; };
-		4F56C7E52B1F74E7007ADDA6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F56C7E42B1F74E7007ADDA6 /* RealmSwift */; };
 		4F56C7E92B20C6A7007ADDA6 /* MyListsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F56C7E82B20C6A7007ADDA6 /* MyListsViewModel.swift */; };
 		4F5EA69A2B1E15310042186B /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA6992B1E15300042186B /* EndpointProtocol.swift */; };
 		4F5EA69E2B1E165A0042186B /* EndpointBaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5EA69D2B1E165A0042186B /* EndpointBaseUrl.swift */; };
@@ -42,6 +40,7 @@
 		4F6FD2462B1CA74800BDA019 /* ChannelLanguange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2452B1CA74800BDA019 /* ChannelLanguange.swift */; };
 		4F6FD24A2B1CA86800BDA019 /* ChannelGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD2492B1CA86800BDA019 /* ChannelGenre.swift */; };
 		4F6FD24E2B1CACC100BDA019 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6FD24D2B1CACC100BDA019 /* Package.swift */; };
+		4F7E39042B21EAE500E770F3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F7E39032B21EAE500E770F3 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F56C7E52B1F74E7007ADDA6 /* RealmSwift in Frameworks */,
-				4F56C7E32B1F74E7007ADDA6 /* Realm in Frameworks */,
+				4F7E39042B21EAE500E770F3 /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,8 +394,7 @@
 			);
 			name = "TVChannelList-SZ";
 			packageProductDependencies = (
-				4F56C7E22B1F74E7007ADDA6 /* Realm */,
-				4F56C7E42B1F74E7007ADDA6 /* RealmSwift */,
+				4F7E39032B21EAE500E770F3 /* RealmSwift */,
 			);
 			productName = "TVChannelList-SZ";
 			productReference = 4F6FD1FD2B1C9E5F00BDA019 /* TVChannelList-SZ.app */;
@@ -472,7 +469,7 @@
 			);
 			mainGroup = 4F6FD1F42B1C9E5F00BDA019;
 			packageReferences = (
-				4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				4F7E39022B21EAE500E770F3 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 4F6FD1FE2B1C9E5F00BDA019 /* Products */;
 			projectDirPath = "";
@@ -904,7 +901,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		4F7E39022B21EAE500E770F3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -915,14 +912,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4F56C7E22B1F74E7007ADDA6 /* Realm */ = {
+		4F7E39032B21EAE500E770F3 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		4F56C7E42B1F74E7007ADDA6 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4F56C7E12B1F74E7007ADDA6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = 4F7E39022B21EAE500E770F3 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

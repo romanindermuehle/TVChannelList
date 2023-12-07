@@ -17,13 +17,19 @@ class MyListsViewModel {
     }
 
     private func fetchMyLists() {
-        self.myLists = RealmManager.shared.read(RealmChannelList.self)
+        RealmManager.shared.read(RealmChannelList.self) { [weak self] lists in
+            guard let self else { return }
+            self.myLists = lists
+        }
     }
 
     func saveList(name: String) {
         let list = RealmChannelList()
         list.name = name
-        RealmManager.shared.insert(list)
-        fetchMyLists()
+
+        RealmManager.shared.insert(list) { [weak self] finished in
+            guard let self, finished else { return }
+            self.fetchMyLists()
+        }
     }
 }

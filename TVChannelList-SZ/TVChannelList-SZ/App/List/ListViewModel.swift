@@ -21,9 +21,11 @@ class ListViewModel {
     }
 
     private func fetchLocalChannels() {
-        guard let local = RealmManager.shared.read(RealmChannels.self).first else { return }
-        self.localChannels = local
-        changePicker()
+        RealmManager.shared.read(RealmChannels.self) { [weak self] realmChannels in
+            guard let self, let localChannels = realmChannels.first else { return }
+            self.localChannels = localChannels
+            self.changePicker()
+        }
     }
 
     func changePicker() {
